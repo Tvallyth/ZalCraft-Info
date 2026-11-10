@@ -1,0 +1,14 @@
+{
+  "title": {
+    "en_us": "Welcome to ZalCraft 2.0",
+    "zh_cn": "欢迎来到 ZalCraft 2.0",
+    "zh_tw": "歡迎來到 ZalCraft 2.0"
+  },
+  "content": {
+    "en_us": "ZalCraft is a community fork of Zalith Launcher, tuned for modern arm64 Android devices.\n\nThis build is arm64-only and requires Android 12 (API 31) or newer.\n\nIf you used ZalCraft 1.4.1.x, uninstall it once before installing this version - the application id changed so both can live side by side.\n\nBug reports and feature requests: https://github.com/Tvallyth/ZalCraft/issues",
+    "zh_cn": "ZalCraft 是 Zalith Launcher 的社区分支，针对现代 arm64 Android 设备优化。\n\n此版本仅支持 arm64，需要 Android 12 (API 31) 或更高版本。\n\n如果你使用过 ZalCraft 1.4.1.x，请先卸载旧版再安装此版本——应用 ID 已更改，两者可以共存。\n\n问题反馈与功能请求：https://github.com/Tvallyth/ZalCraft/issues",
+    "zh_tw": "ZalCraft 是 Zalith Launcher 的社群分支，針對現代 arm64 Android 裝置最佳化。\n\n此版本僅支援 arm64，需要 Android 12 (API 31) 或更新版本。\n\n如果你使用過 ZalCraft 1.4.1.x，請先解除安裝舊版再安裝此版本——應用 ID 已更改，兩者可以並存。\n\n問題回報與功能請求：https://github.com/Tvallyth/ZalCraft/issues"
+  },
+  "date": "2026-11-10",
+  "numbering": 1
+}
