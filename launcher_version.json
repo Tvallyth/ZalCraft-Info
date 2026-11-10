@@ -1,21 +1,21 @@
 {
-  "version_code": 200000,
-  "version_name": "2.0.0",
+  "version_code": 200001,
+  "version_name": "1.4.1.8",
   "title": {
-    "en_us": "ZalCraft 2.0.0 - arm64 only, Android 12+",
-    "zh_cn": "ZalCraft 2.0.0 - 仅 arm64, Android 12+",
-    "zh_tw": "ZalCraft 2.0.0 - 僅 arm64, Android 12+"
+    "en_us": "ZalCraft 1.4.1.8 - arm64 + v7a, Android 8+",
+    "zh_cn": "ZalCraft 1.4.1.8 - arm64 + v7a, Android 8+",
+    "zh_tw": "ZalCraft 1.4.1.8 - arm64 + v7a, Android 8+"
   },
   "description": {
-    "en_us": "### Highlights\n- **Liquid Glass UI**: new Jetpack Compose design system - real glass material (specular rim, radial sheen, floating depth), animated bubble background, pill buttons with spring motion + haptics, frosted top bar, ZL2 cream/green palette, light + dark\n- **Skin & Cape Studio**: pixel skin editor (64x64) with a live isometric 3D preview, brush sizes, eraser, 24 colours, undo/redo, classic/slim model. Works for every account locally, or uploads to Mojang for premium accounts\n- **arm64 only**: one build for every 64-bit device (-157 MB APK)\n- **Android 12+**: RenderEffect backdrop blur\n- **Low-RAM profile**: SerialGC + no C2 JIT, ~250-350 MB less memory on 4 GB devices\n- **Microsoft auth fixes**: `d=` RPS ticket prefix, retry with backoff, profile-API skin refresh\n- **Mods**: CurseForge + Modrinth, Fabric/Forge/NeoForge/Quilt/OptiFine, MobileGlues renderer plugin\n\n### Downloads\n- `ZalCraft-2.0.0-arm64-v8a.apk` (158 MB) - JRE 8/17/21/25 bundled\n\n### Upgrade notes\n- The application id changed to `id.zalcraft.launcher`, so ZalCraft can be installed next to the official Zalith Launcher. Uninstall the old ZalCraft 1.4.1.x once before installing this version.\n- The launcher language now follows your phone language instead of being forced to English.\n- The launcher no longer offers the official Zalith Launcher as an in-app update.",
-    "zh_cn": "### 亮点\n- **仅 arm64**：一个版本适配所有 64 位设备（APK 减少 157 MB）\n- **Android 12+**：使用 RenderEffect 实现真正的背景模糊\n- **Liquid Glass**：玻璃材质、气泡背景、带弹性动画与触感反馈的胶囊按钮\n- **低内存配置**：SerialGC + 关闭 C2 JIT，4 GB 设备节省约 250-350 MB 内存\n- **皮肤与披风工作室**：2D 皮肤编辑器、所有账号均可本地覆盖、会员账号可应用到 Mojang\n- **微软登录修复**：`d=` RPS ticket 前缀、带退避的重试、profile API 刷新皮肤\n- **模组**：CurseForge + Modrinth、Fabric/Forge/NeoForge/Quilt/OptiFine、MobileGlues 渲染插件\n\n### 升级说明\n- 应用 ID 已更改为 `id.zalcraft.launcher`，可与官方 Zalith Launcher 共存。请先卸载旧的 ZalCraft 1.4.1.x。\n- 启动器语言现在跟随手机语言，不再强制英文。\n- 启动器不会再提示更新为官方 Zalith Launcher。",
-    "zh_tw": "### 重點\n- **僅 arm64**：一個版本適配所有 64 位裝置（APK 減少 157 MB）\n- **Android 12+**：使用 RenderEffect 實現真正的背景模糊\n- **Liquid Glass**：玻璃材質、氣泡背景、帶彈性動畫與觸感回饋的膠囊按鈕\n- **低記憶體設定**：SerialGC + 關閉 C2 JIT，4 GB 裝置節省約 250-350 MB 記憶體\n- **皮膚與披風工作室**：2D 皮膚編輯器、所有帳號均可本機覆寫、會員帳號可套用至 Mojang\n- **微軟登入修正**：`d=` RPS ticket 前綴、帶退避的重試、profile API 更新皮膚\n- **模組**：CurseForge + Modrinth、Fabric/Forge/NeoForge/Quilt/OptiFine、MobileGlues 渲染外掛\n\n### 升級說明\n- 應用 ID 已更改為 `id.zalcraft.launcher`，可與官方 Zalith Launcher 並存。請先解除安裝舊的 ZalCraft 1.4.1.x。\n- 啟動器語言現在跟隨手機語言，不再強制英文。\n- 啟動器不會再提示更新為官方 Zalith Launcher。"
+    "en_us": "### Highlights\n- **Two single-ABI builds**: the launcher picks the matching APK automatically - arm64-v8a on 64-bit phones, armeabi-v7a with 32-bit JVMs on old phones.\n- **No device locks**: minSdk is now 26 (Android 8.0), the upstream baseline - Android 8 through 15.\n- **Full signatures (v1+v2+v3)**: strict OEM installers that reject v2-only APKs accept this build.\n- **New merged ZC logo**: the deep-green Z sits inside the lime C ring - pure vector, with a matching themed (monochrome) icon. The app name is now `zalCraft`.\n- **Liquid Glass UI**: gradient-based glass material, bubble background, pill buttons with spring motion + haptics, light + dark.\n- **Skin & Cape Studio**: pixel editor with a live isometric 3D preview, works for every account.\n- **Mods**: CurseForge + Modrinth in one Compose browser, install into the download queue (pause/resume/speed limit).\n- **Tools**: world backup, crash analyser, screenshot gallery, shader/resource pack manager with per-GPU recommendations, performance monitor, external authlib-injector logins (EasyAuth and friends).\n\n### Install\n- Download `ZalCraft-1.4.1.8-arm64-v8a.apk` (64-bit) or `ZalCraft-1.4.1.8-armeabi-v7a.apk` (32-bit); `sha256sums.txt` lists both checksums. If the phone reports an invalid package, compare the checksum - a truncated download is the usual cause.\n\n### Upgrade notes\n- The application id is `id.zalcraft.launcher`, so ZalCraft can live next to the official Zalith Launcher.\n- The language follows the phone language; no forced reset.",
+    "zh_cn": "### 亮点\n- **双 ABI 单包构建**：启动器自动选择匹配的 APK - 64 位手机用 arm64-v8a，老手机用 armeabi-v7a（含 32 位 JVM）。\n- **不再锁设备**：minSdk 现为 26（Android 8.0），即上游基线 - Android 8 到 15 全部支持。\n- **完整签名（v1+v2+v3）**：拒绝 v2-only APK 的严格 OEM 安装器也可以安装此版本。\n- **全新 ZC 合体图标**：深绿 Z 嵌入青柠色 C 环，纯矢量绘制，含主题单色图标。应用名称改为 `zalCraft`。\n- **Liquid Glass 界面**：基于渐变的玻璃材质、气泡背景、带弹性动画与触感反馈的胶囊按钮、浅色+深色模式。\n- **皮肤与披风工作室**：像素编辑器 + 实时等距 3D 预览，所有账号可用。\n- **模组**：CurseForge + Modrinth 合一浏览器，安装直接进入下载队列（暂停/续传/限速）。\n- **工具**：世界备份、崩溃分析、截图库、Minimap／着色器资源包管理器（含 GPU 推荐）、性能监控、外部 authlib-injector 登录（EasyAuth 等）。\n\n### 安装\n- 下载 `ZalCraft-1.4.1.8-arm64-v8a.apk`（64 位）或 `ZalCraft-1.4.1.8-armeabi-v7a.apk`（32 位）；`sha256sums.txt` 包含两者校验值。若提示包无效，请对比校验值 - 下载不完整通常是原因。\n\n### 升级说明\n- 应用 ID 为 `id.zalcraft.launcher`，可与官方 Zalith Launcher 并存。\n- 语言跟随系统，不再强制英文。",
+    "zh_tw": "### 亮點\n- **雙 ABI 單包建置**：啟動器自動選擇匹配的 APK - 64 位元手機用 arm64-v8a，舊手機用 armeabi-v7a（含 32 位元 JVM）。\n- **不再鎖裝置**：minSdk 現為 26（Android 8.0），即上游基線 - Android 8 到 15 全部支援。\n- **完整簽名（v1+v2+v3）**：拒絕 v2-only APK 的嚴格 OEM 安裝器也可以安裝此版本。\n- **全新 ZC 合體圖示**：深綠 Z 嵌入青檸色 C 環，純向量繪製，含主題單色圖示。應用名稱改為 `zalCraft`。\n- **Liquid Glass 介面**：基於漸層的玻璃材質、氣泡背景、帶彈簧動畫與觸感回饋的膠囊按鈕、淺色+深色模式。\n- **皮膚與披風工作室**：像素編輯器 + 即時等角 3D 預覽，所有帳號可用。\n- **模組**：CurseForge + Modrinth 合一瀏覽器，安裝直接進入下載佇列（暫停/續傳/限速）。\n- **工具**：世界備份、崩潰分析、截圖庫、著色器／資源包管理器（含 GPU 建議）、效能監控、外部 authlib-injector 登入（EasyAuth 等）。\n\n### 安裝\n- 下載 `ZalCraft-1.4.1.8-arm64-v8a.apk`（64 位元）或 `ZalCraft-1.4.1.8-armeabi-v7a.apk`（32 位元）；`sha256sums.txt` 包含兩者校驗值。若提示套件無效，請對比校驗值 - 下載不完整通常是原因。\n\n### 升級說明\n- 應用 ID 為 `id.zalcraft.launcher`，可與官方 Zalith Launcher 並存。\n- 語言跟隨系統，不再強制英文。"
   },
   "published_at": "2026-11-10T00:00:00Z",
   "file_size": {
-    "all": 142962728,
-    "arm": 0,
-    "arm64": 142962728,
+    "all": 139707308,
+    "arm": 133771530,
+    "arm64": 139707308,
     "x86": 0,
     "x86_64": 0
   },
